@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -29,3 +29,21 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+*/
+//FRONT ROUTES
+Route::prefix('/')->name('front.')->group(function () {
+    //INDEX PAGE
+    Route::view('', 'front.index')->name('index');
+    //ABOUT PAGE
+    Route::view('/about', 'front.about')->name('about');
+    //CONTACT PAGE
+    Route::view('/contact', 'front.contact')->name('contact');
+    //ProjectS PAGE
+    Route::view('/projects', 'front.project')->name('projects');
+    //Service Page
+    Route::view('/services', 'front.service')->name('services');
+    //Team Page
+    Route::view('/team', 'front.team')->name('team');
+    //TESTIMONIALS PAGE
+    Route::view('/testimonials', 'front.testimonial')->name('testimonials');
+});
