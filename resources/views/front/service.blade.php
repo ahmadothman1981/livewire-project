@@ -1,4 +1,8 @@
 @extends('front.master')
+@section('title','Services')
+@section('services-active','active')
+
+
 @section('hero')
 @include('front.partials.hero2',['PageName'=>'Service'])
 @endsection

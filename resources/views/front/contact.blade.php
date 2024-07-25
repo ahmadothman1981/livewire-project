@@ -1,4 +1,8 @@
 @extends('front.master')
+@section('title','Contact')
+@section('contact-active','active')
+
+
 @section('hero')
 @include('front.partials.hero2',['PageName'=>'Contact'])
 @endsection

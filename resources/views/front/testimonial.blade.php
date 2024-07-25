@@ -1,4 +1,6 @@
 @extends('front.master')
+@section('title','Testimonial')
+@section('team-testimonial-active','active')
 @section('hero')
 @include('front.partials.hero2',['PageName'=>'Testimonial'])
 @endsection

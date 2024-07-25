@@ -1,4 +1,8 @@
 @extends('front.master')
+@section('title','Home')
+@section('index-active','active')
+
+
 @section('hero')
                  @include('front.partials.hero')
            
