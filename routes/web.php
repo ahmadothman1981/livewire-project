@@ -30,7 +30,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 */
-//FRONT ROUTES
+//================FRONT ROUTES=================
 Route::prefix('/')->name('front.')->group(function () {
     //INDEX PAGE
     Route::view('', 'front.index')->name('index');
@@ -46,4 +46,11 @@ Route::prefix('/')->name('front.')->group(function () {
     Route::view('/team', 'front.team')->name('team');
     //TESTIMONIALS PAGE
     Route::view('/testimonials', 'front.testimonial')->name('testimonials');
+});
+//================ADMIN ROUTES=================
+Route::prefix('/admin/')->name('admin.')->group(function () {
+    //INDEX PAGE
+    Route::view('', 'admin.index')->name('index');
+    //ABOUT PAGE
+   
 });
