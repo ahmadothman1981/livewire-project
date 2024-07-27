@@ -49,8 +49,13 @@ Route::prefix('/')->name('front.')->group(function () {
 });
 //================ADMIN ROUTES=================
 Route::prefix('/admin/')->name('admin.')->group(function () {
+    Route::middleware('admin')->group(function () {
     //INDEX PAGE
-    Route::view('', 'admin.index')->name('index');
+    Route::view('/dashboard', 'admin.index')->name('index');
+    //Setting PAGE
+    Route::view('/setting', 'admin.setting.index')->name('setting');
+    
+    });
     //login PAGE
-    Route::view('/login', 'admin.auth.login')->name('login');
+    Route::view('/login', 'admin.auth.login')->middleware('guest:admin')->name('login');
 });

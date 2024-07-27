@@ -3,22 +3,29 @@
 namespace App\Livewire\Admin\Auth;
 
 use Livewire\Component;
+use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
 class AdminLoginComponent extends Component
 {
+    //new validation syntax
+    #[Validate('required|string|email')]
     public $email;
+    #[Validate('required')]
     public $password;
-    public $remember;
-    public function rules()
+    #[Validate('nullable')]
+    public $remember; 
+    
+    //old validation syntax
+   /* public function rules()
     {
         return [
             'email' => 'required|string|email',
             'password' => 'required',
             'remember' => 'nullable'
         ];
-    }
+    }*/
 
     public function submit()
     {
