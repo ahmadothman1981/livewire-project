@@ -22,7 +22,7 @@ class UpdateSettingComponent extends Component
             'setting.address'=>'required',
             'setting.phone'=>'required|max:20',
             'setting.facebook'=>'nullable|url',
-            'setting.linkdin'=>'nullable|url',
+            'setting.linkedin'=>'nullable|url',
             'setting.twitter'=>'nullable|url',
             'setting.instagram'=>'nullable|url',
         ];
@@ -32,6 +32,7 @@ class UpdateSettingComponent extends Component
     {
         $this->validate();
         $this->setting->save();
+        session()->flash('message','Setting Updated Successfully');
 
     }
     public function render()

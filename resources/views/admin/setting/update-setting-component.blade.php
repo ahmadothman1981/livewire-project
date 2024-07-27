@@ -1,4 +1,10 @@
 <form class="row" wire:submit.prevent="submit">
+@if (session()->has('message'))
+    <div id="flash-message" class="alert alert-success my-success-alert" >
+        {{ session('message') }}
+    </div>
+@endif
+
                       <div class="col-md-6">
                         <label for="defaultFormControlInput" class="form-label">Name</label>
                         <input
@@ -56,11 +62,11 @@
                         @error('setting.facebook') <span class="text-danger">{{ $message }}</span> @enderror
                       </div>
                       <div class="col-md-6 mt-2">
-                        <label for="defaultFormControlInput" class="form-label">Linkdin</label>
+                        <label for="defaultFormControlInput" class="form-label">linkedin</label>
                         <input
                           type="text"
                           class="form-control"
-                         wire:model='setting.linkdin'
+                         wire:model='setting.linkedin'
                           placeholder="Linkdin"
                           
                         />
@@ -89,6 +95,8 @@
                         @error('setting.instagram') <span class="text-danger">{{ $message }}</span> @enderror
                       </div>
                       <div class="col-md-12 mt-4">
-                        <button class="btn btn-primary">Submit</button> 
+                        <button class="btn btn-primary" type="submit">Submit</button> 
                       </div>
                       </form>
+
+  
