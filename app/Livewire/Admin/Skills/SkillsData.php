@@ -17,8 +17,10 @@ class SkillsData extends Component
         $this->resetPage();
         //reset pagiation so the search for the whole pages will work
     }
+
+    protected $listeners = ['refreshData' => '$refesh'];
     public function render()
     {
-        return view('admin.skills.skills-data',['data' => Skill::where('name','like', '%'.$this->search.'%')->paginate(1)]);
+        return view('admin.skills.skills-data',['data' => Skill::where('name','like', '%'.$this->search.'%')->paginate(5)]);
     }
 }

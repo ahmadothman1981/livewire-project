@@ -29,4 +29,9 @@
             }
         });
     });
+
+    window.addEventListener('createModalClose', event => {
+        $('#createModal').modal('toggle');
+    })
     </script>
+
