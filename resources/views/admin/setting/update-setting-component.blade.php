@@ -14,7 +14,8 @@
                           placeholder="Name"
                           wire:model='setting.name'
                         />
-                        @error('setting.name') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.name'])
+                        
                         
                       </div>
                       <div class="col-md-6">
@@ -26,7 +27,8 @@
                           placeholder="Email"
                           
                         />
-                        @error('setting.email') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.email'])
+                        
                       </div>
                       <div class="col-md-6 mt-2">
                         <label for="defaultFormControlInput" class="form-label">Address</label>
@@ -37,7 +39,8 @@
                           placeholder="Address"
                           
                         />
-                        @error('setting.address') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.address'])
+                        
                       </div>
                       <div class="col-md-6 mt-2">
                         <label for="defaultFormControlInput" class="form-label">Phone</label>
@@ -48,7 +51,8 @@
                           placeholder="Phone"
                           
                         />
-                        @error('setting.phone') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.phone'])
+                        
                       </div>
                       <div class="col-md-6 mt-2">
                         <label for="defaultFormControlInput" class="form-label">Facebook</label>
@@ -59,7 +63,8 @@
                           placeholder="Facebook"
                           
                         />
-                        @error('setting.facebook') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.facebook'])
+                       
                       </div>
                       <div class="col-md-6 mt-2">
                         <label for="defaultFormControlInput" class="form-label">linkedin</label>
@@ -70,7 +75,8 @@
                           placeholder="Linkdin"
                           
                         />
-                        @error('setting.linkdin') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.linkdin'])
+                        
                       </div>
                       <div class="col-md-6 mt-2">
                         <label for="defaultFormControlInput" class="form-label">Twitter</label>
@@ -81,7 +87,8 @@
                           placeholder="Twitter"
                           
                         />
-                        @error('setting.twitter') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.twitter'])
+                        
                       </div>
                       <div class="col-md-6 mt-2">
                         <label for="defaultFormControlInput" class="form-label">Instagram</label>
@@ -92,7 +99,8 @@
                           placeholder="Instagram"
                           
                         />
-                        @error('setting.instagram') <span class="text-danger">{{ $message }}</span> @enderror
+                        @include('admin.error',['property' =>'setting.instagram'])
+                        
                       </div>
                       <div class="col-md-12 mt-4">
                         <button class="btn btn-primary" type="submit">Submit</button> 
