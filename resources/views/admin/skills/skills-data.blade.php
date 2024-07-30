@@ -16,7 +16,7 @@
                     <tbody class="table-border-bottom-0">
                         @foreach($data as $d)
                       <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{$d->name}}</strong></td>
+                        <td> <strong>{{$d->name}}</strong></td>
                         <td>{{$d->progress}}</td>
                         
                         

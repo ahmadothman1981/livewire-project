@@ -11,7 +11,7 @@
                                   aria-label="Close"
                                 ></button>
                               </div>
-                              <form wire:submit.prevent="submit">
+                              <form  wire:submit.prevent="submit">
                               <div class="modal-body">
                                 <div class="row">
                                     {{$slot}}

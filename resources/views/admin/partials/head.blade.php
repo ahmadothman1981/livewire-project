@@ -34,7 +34,8 @@
     <link rel="stylesheet" href="{{asset('admin-assets')}}/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Helpers -->
     <script src="{{asset('admin-assets')}}/vendor/js/helpers.js"></script>
 

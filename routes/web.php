@@ -58,6 +58,8 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
     Route::view('/skills', 'admin.skills.index')->name('skills');
     //Subscribe PAGE
     Route::view('/subscribe', 'admin.subscribers.index')->name('subscribers');
+    //Counter PAGE
+    Route::view('/counters', 'admin.counters.index')->name('counters');
     
     });
     //login PAGE
