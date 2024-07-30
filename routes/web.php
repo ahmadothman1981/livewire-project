@@ -56,6 +56,8 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
     Route::view('/setting', 'admin.setting.index')->name('setting');
     //skils PAGE
     Route::view('/skills', 'admin.skills.index')->name('skills');
+    //Subscribe PAGE
+    Route::view('/subscribe', 'admin.subscribers.index')->name('subscribers');
     
     });
     //login PAGE
