@@ -15,7 +15,7 @@ class MessagesDelete extends Component
        
        $this->message = Message::find($id);
        $this->dispatch('deleteModalToggle');
-       $record = $this->message;
+      
     }
 
    
