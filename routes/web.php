@@ -60,7 +60,8 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
     Route::view('/subscribe', 'admin.subscribers.index')->name('subscribers');
     //Counter PAGE
     Route::view('/counters', 'admin.counters.index')->name('counters');
-    
+    //Service PAGE
+    Route::view('/services', 'admin.services.index')->name('services');
     });
     //login PAGE
     Route::view('/login', 'admin.auth.login')->middleware('guest:admin')->name('login');
