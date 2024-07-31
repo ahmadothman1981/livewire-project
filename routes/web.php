@@ -66,6 +66,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
     Route::view('/messages', 'admin.messages.index')->name('messages');
     //Category PAGE
     Route::view('/categories', 'admin.categories.index')->name('categories');
+    //Project PAGE
+    Route::view('/projects', 'admin.projects.index')->name('projects');
+
     });
     //login PAGE
     Route::view('/login', 'admin.auth.login')->middleware('guest:admin')->name('login');
