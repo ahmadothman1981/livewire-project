@@ -32,13 +32,13 @@
                               <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#" wire:click.prevent="$dispatch('serviceupdate' , {id:{{$d->id}}})"
+                              <a class="dropdown-item" href="#" wire:click.prevent="$dispatch('projectsupdate' , {id:{{$d->id}}})"
                                 ><i class="bx bx-edit-alt me-1"></i> Edit</a
                               >
-                              <a class="dropdown-item" href="#" wire:click.prevent="$dispatch('serviceshow' , {id:{{$d->id}}})"
+                              <a class="dropdown-item" href="#" wire:click.prevent="$dispatch('projectsshow' , {id:{{$d->id}}})"
                                 ><i class="bx bx-trash me-1"></i> Show</a
                               >
-                              <a class="dropdown-item" href="#" wire:click.prevent="$dispatch('servicedelete' , {id:{{$d->id}}})"
+                              <a class="dropdown-item" href="#" wire:click.prevent="$dispatch('projectsdelete' , {id:{{$d->id}}})"
                                 ><i class="bx bx-trash me-1"></i> Delete</a
                               >
                             </div>

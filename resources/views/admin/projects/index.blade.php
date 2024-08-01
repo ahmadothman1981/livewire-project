@@ -21,6 +21,9 @@
               <div class="card mb-4">
               <div class="card-body ">
                 @livewire('admin.projects.projects-data')
+                @livewire('admin.projects.projects-update')
+                @livewire('admin.projects.projects-delete')
+                @livewire('admin.projects.projects-show')
                     </div>
                   </div>
                
