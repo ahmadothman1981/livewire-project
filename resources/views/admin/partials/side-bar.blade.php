@@ -122,6 +122,12 @@
                 <div data-i18n="Analytics"> Projects</div>
               </a>
             </li>
+            <li class="menu-item @yield('testimonials-active')">
+              <a href="{{ route('admin.testmonials') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Analytics">   <table>Testmonials</table></div>
+              </a>
+            </li>
 
 
 
