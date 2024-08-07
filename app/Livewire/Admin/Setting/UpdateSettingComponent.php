@@ -12,6 +12,7 @@ class UpdateSettingComponent extends Component
     {
         $this->setting = Setting::find(1);
         
+        
     }
 
     public function rules()
@@ -19,12 +20,12 @@ class UpdateSettingComponent extends Component
         return [
             'setting.name'=>'required|string',
             'setting.email'=>'required|email',
-            'setting.address'=>'required',
+            'setting.address'=>'required|string',
             'setting.phone'=>'required|max:20',
-            'setting.facebook'=>'nullable|url',
-            'setting.linkedin'=>'nullable|url',
-            'setting.twitter'=>'nullable|url',
-            'setting.instagram'=>'nullable|url',
+            'setting.facebook'=>'string|url',
+            'setting.linkedin'=>'string|url',
+            'setting.twitter'=>'string|url',
+            'setting.instagram'=>'string|url',
         ];
        
     }
@@ -32,6 +33,7 @@ class UpdateSettingComponent extends Component
     {
         $this->validate();
         $this->setting->save();
+       
         session()->flash('message','Setting Updated Successfully');
 
     }
